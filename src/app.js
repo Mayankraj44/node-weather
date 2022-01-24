@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const hbs = require("hbs");
 const utils = require("./utils");
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 console.log(__dirname);

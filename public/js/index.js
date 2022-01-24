@@ -20,7 +20,7 @@ const success = document.querySelector("#success");
 weatheForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const location = inputValue.value;
-  fetch(`http://localhost:3000/weather?address=${location}`)
+  fetch(`/weather?address=${location}`)
     .then((res) => {
       return res.json();
     })
